@@ -1,0 +1,8 @@
+digraph {
+	node [shape=box]
+	"CON(C)C(=O)CC1COCCN1C(=O)OC(C)(C)C" [label="" color=red image="C:/Users/gaosinuo/Desktop/graph2edits_retrostar/pred_results/save_fig/6.png"]
+	"CCOC(=O)CC1COCCN1C(=O)OC(C)(C)C" [label="" image="C:/Users/gaosinuo/Desktop/graph2edits_retrostar/pred_results/save_fig/7.png"]
+	"CCOC(=O)CC1COCCN1C(=O)OC(C)(C)C" -> "CON(C)C(=O)CC1COCCN1C(=O)OC(C)(C)C" [weight=2.0]
+	CNOC [label="" image="C:/Users/gaosinuo/Desktop/graph2edits_retrostar/pred_results/save_fig/8.png"]
+	CNOC -> "CON(C)C(=O)CC1COCCN1C(=O)OC(C)(C)C" [weight=2.0]
+}
