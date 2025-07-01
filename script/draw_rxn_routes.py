@@ -10,7 +10,7 @@ def mol_to_image(mol, n_id, size=(200, 200)):
     img = Draw.MolToImage(mol, size=size)
     save_path = os.path.join("..", "pred_results", "save_fig", f"{n_id}.png")
     img.save(save_path)
-    return f'C:/Users/gaosinuo/Desktop/graph2edits_retrostar/pred_results/save_fig/{n_id}.png'
+    return f'../pred_results/save_fig/{n_id}.png'  # 应设为绝对路径
 
 
 if __name__ == '__main__':
