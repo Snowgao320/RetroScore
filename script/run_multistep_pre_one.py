@@ -198,7 +198,7 @@ def main(args, planner):
         search_results['best_len_aver_step_diff'].append(None)
 
         search_results['best_sscore_len'].append(None)
-        search_results['best_sscore_cost'].append(None)
+        search_results['best_sscore_score'].append(None)
         search_results['best_sscore_end_diff'].append(None)
         search_results['best_sscore_aver_step_diff'].append(None)
 
@@ -233,7 +233,7 @@ def main(args, planner):
         search_results['best_len_aver_step_diff'].append(None)
 
         search_results['best_sscore_len'].append(None)
-        search_results['best_sscore_cost'].append(None)
+        search_results['best_sscore_score'].append(None)
         search_results['best_sscore_end_diff'].append(None)
         search_results['best_sscore_aver_step_diff'].append(None)
 
