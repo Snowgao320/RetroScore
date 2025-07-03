@@ -157,7 +157,7 @@ def molstar(target_mol,starting_mols, expand_fn, value_fn, iterations, max_route
     if mol_tree.succ and not mol_tree.mol_in_target:
         topk_routes = mol_tree.get_topk_routes()
         assert len(topk_routes) != 0
-        best_diff_route = mol_tree.get_best_route(topk_routes, args.filter_radio, args.filter_coef)
+        best_diff_route = mol_tree.get_best_route(topk_routes, args.filter_ratio, args.filter_coef)
         best_cost_route = mol_tree.get_cost_best_route(topk_routes)
         best_len_route = mol_tree.get_len_best_route(topk_routes)
         # best_diff_route_05 = mol_tree.get_best_route_5(topk_routes)
