@@ -268,7 +268,7 @@ if __name__ == '__main__':
     parser.add_argument('--save_dir', type=str, default='../', help='result file save dir')
     parser.add_argument('--save_name', type=str, default='test1', help='result file save name(remove .csv)')
     parser.add_argument('--cost_weight', type=float, default=0.1, help='expand value compose cost weight')
-    parser.add_argument('--filter_radio', type=float, default=0.3, help='filter radio as cost')
+    parser.add_argument('--filter_ratio', type=float, default=0.3, help='filter ratio as cost')
     parser.add_argument('--filter_coef', type=float, default=0.3, help='filter coef as diff')
     parser.add_argument('--routes_num', type=int, default=10, help='max_routes_num')
     parser.add_argument('--iter', type=int, default=500, help='iterations num')
