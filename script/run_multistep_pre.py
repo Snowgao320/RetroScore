@@ -238,7 +238,7 @@ if __name__ == '__main__':
     parser.add_argument('--save_dir', type=str, default='../retroscore_results', help='result file save dir')
     parser.add_argument('--save_name', type=str, default='multi_plan_results', help='result file save name(remove .csv)')
     parser.add_argument('--cost_weight', type=float, default=0.1, help='expand value compose cost weight')
-    parser.add_argument('--filter_radio', type=float, default=0.3, help='filter radio as cost')
+    parser.add_argument('--filter_ratio', type=float, default=0.3, help='filter ratio as cost')
     parser.add_argument('--filter_coef', type=float, default=0.3, help='filter coef as diff')
     parser.add_argument('--save_every', type=int, default=50, help='every num save')
     args = parser.parse_args()
