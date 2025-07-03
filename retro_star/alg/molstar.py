@@ -64,17 +64,19 @@ def molstar(target_mol,starting_mols, expand_fn, value_fn, iterations, max_route
             else:
                 result = {'reactants': [], 'scores':[], 'edits': []}
 
-            # 单步模型输出整理为字典形式；包含反应物、反应得分、编辑步骤；缺一就为None
-            reactants = result['reactants']
-            scores = result['scores']
-            edits = result['edits']
-            # delete None reactant
-            for rid, r in enumerate(reactants):
-                if r is None or r == "":
-                    reactants.remove(r)
-                    scores.remove(scores[rid])
-                    edits.remove(edits[rid])
-            assert len(reactants) == len(scores) == len(edits)
+            # 单步模型输出整理为字典形式；包含反应物、反应得分、编辑步骤
+            raw_reactants = result['reactants']
+            raw_scores = result['scores']
+            raw_edits = result['edits']
+            # update_reactants, delete repeat
+            reactants = []
+            scores = []
+            edits = []
+            for rid, r in enumerate(raw_reactants):
+                if r not in reactants and r != "" and r is not None:
+                    reactants.append(r)
+                    scores.append(raw_scores[rid])
+                    edits.append(raw_edits[rid])
 
             if len(reactants) != 0:
 
