@@ -78,6 +78,7 @@ If you want to visualize the multi-step reaction route, we provide a script here
 python draw_rxn_routes.py --fpath **FILE_PATH**
 ```
 **FILE_PATH** is the file concluding routes need to be visualized, supporting *routes_pred.csv* and *routes_pred_all_routes.pkl* from multi-step planning. The images will be saved at *pred_results/draw/*
+
 ![draw_sample](./draw_sample.png)
 
 ## Calculate RetroScore for compounds
