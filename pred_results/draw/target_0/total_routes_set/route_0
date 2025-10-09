@@ -1,0 +1,10 @@
+digraph {
+	node [shape=box]
+	"CON(C)C(=O)CC1COCCN1C(=O)OC(C)(C)C" [label="CON(C)C(=O)CC1COCCN1C(=O)OC(C)(C)C" color=red image="/home/jianping/GSN/RetroScore/pred_results/draw/target_0/draw_transfer_station/0.png" labeljust=c labelloc=t]
+	"CC(C)(C)OC(=O)N1CCOCC1CC(=O)O" [label="CC(C)(C)OC(=O)N1CCOCC1CC(=O)O" image="/home/jianping/GSN/RetroScore/pred_results/draw/target_0/draw_transfer_station/1.png" labeljust=c labelloc=t]
+	"CC(C)(C)OC(=O)N1CCOCC1CC(=O)O" -> "CON(C)C(=O)CC1COCCN1C(=O)OC(C)(C)C" [weight=2.0]
+	"CN(C)O" [label="CN(C)O" image="/home/jianping/GSN/RetroScore/pred_results/draw/target_0/draw_transfer_station/2.png" labeljust=c labelloc=t]
+	"CN(C)O" -> "CON(C)C(=O)CC1COCCN1C(=O)OC(C)(C)C" [weight=2.0]
+	CO [label=CO image="/home/jianping/GSN/RetroScore/pred_results/draw/target_0/draw_transfer_station/3.png" labeljust=c labelloc=t]
+	CO -> "CON(C)C(=O)CC1COCCN1C(=O)OC(C)(C)C" [weight=2.0]
+}
